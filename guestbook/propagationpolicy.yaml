@@ -23,8 +23,8 @@ spec:
           - targetCluster:
               clusterNames:
                 - c2
-            weight: 3
+            weight: 2
           - targetCluster:
               clusterNames:
                 - c3
-            weight: 1
+            weight: 2
