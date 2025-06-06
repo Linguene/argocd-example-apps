@@ -3,7 +3,7 @@ kind: PropagationPolicy
 metadata:
   name: guestbook
   annotations:
-    argocd.argoproj.io/sync-options: "Prune=false,ApplyOutOfSyncOnly=false"
+    argocd.argoproj.io/sync-options: "Prune=false"
 spec:
   resourceSelectors:
     - apiVersion: apps/v1
