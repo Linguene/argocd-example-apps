@@ -2,6 +2,8 @@ apiVersion: policy.karmada.io/v1alpha1
 kind: PropagationPolicy
 metadata:
   name: guestbook
+  annotations:
+    argocd.argoproj.io/sync-options: "Prune=false,ApplyOutOfSyncOnly=false"
 spec:
   resourceSelectors:
     - apiVersion: apps/v1
